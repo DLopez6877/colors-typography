@@ -1,0 +1,128 @@
+@import 'imports/variables';
+@import 'imports/mixins';
+
+// BASE ///////////////////////////////////////////////////
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  @include border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+[class*='col-'] {
+  float: left;
+  padding: 0px 15px;
+  position: relative;
+}
+
+[class*='light'], [class*='dark'], [class*='base'] {
+  padding: 0;
+}
+
+@for $i from 1 through $grid-columns {
+  .col-mobile-#{$i} {
+   width: 100% / $grid-columns * $i;
+  }
+}
+
+@each $color-type, $name-value in $color-names {
+  .#{$color-type} .color-name:after {
+    content:"#{$name-value}";
+  }
+}
+
+@each $color-type, $color-value in $colors {
+  .#{$color-type} .swatch {
+    background-color: #{$color-value};
+  }
+  .#{$color-type} .color-RGB:after {
+    content:"#{red($color-value)} / #{green($color-value)} / #{blue($color-value)}"
+  }
+  .#{$color-type} .color-HSL:after {
+    content:"#{round(hue($color-value))} / #{round(saturation($color-value))} / #{round(lightness($color-value))}"
+  }
+  .#{$color-type}-light .swatch {
+    background-color: #{lighten(saturate($color-value, $light-saturate-amount), $light-amount)};
+  }
+  .#{$color-type}-base .swatch {
+    background-color: $color-value;
+  }
+  .#{$color-type}-dark .swatch {
+    background-color: #{darken(saturate($color-value, $dark-saturate-amount), $dark-amount)};
+  }
+  @each $color-type, $name-value in $color-names {
+    .mixed-with-#{$color-type} .color-name:after {
+      content:"#{$name-value}";
+    }
+  }
+
+  @each $color-mix-type, $color-mix-value in $colors {
+    .#{$color-type} .mixed-with-#{$color-mix-type} .sass-swatch {
+      background-color:mix($color-mix-value, $color-value, $mixed-rate);
+    }
+  }
+}
+
+
+
+// BODY  /////////////////////////////////////////////
+.swatch {
+  width: 100%;
+  height: 150px;
+}
+
+.label {
+  font-weight: bolder;
+}
+
+.value {
+  text-align: right;
+  width: 100%;
+}
+
+.sass-swatch {
+  width: 100%;
+  height: 50px;
+}
+
+.mixed-rate:after {
+  content: "#{$mixed-rate}";
+}
+
+
+// MEDIA /////////////////////////////////////////////
+@media screen and (min-width: 568px) {
+  @for $i from 1 through $grid-columns {
+    .col-tablet-#{$i} {
+     width: 100% / $grid-columns * $i;
+    }
+  }
+  .container {
+    max-width: 850px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  @for $i from 1 through $grid-columns {
+    .col-desktop-#{$i} {
+     width: 100% / $grid-columns * $i;
+    }
+  }
+  .container {
+    max-width: 1400px;
+  }
+}

@@ -1,0 +1,452 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+[class*='col-'] {
+  float: left;
+  padding: 0px 15px;
+  position: relative;
+}
+
+[class*='light'], [class*='dark'], [class*='base'] {
+  padding: 0;
+}
+
+.col-mobile-1 {
+  width: 8.33333%;
+}
+
+.col-mobile-2 {
+  width: 16.66667%;
+}
+
+.col-mobile-3 {
+  width: 25%;
+}
+
+.col-mobile-4 {
+  width: 33.33333%;
+}
+
+.col-mobile-5 {
+  width: 41.66667%;
+}
+
+.col-mobile-6 {
+  width: 50%;
+}
+
+.col-mobile-7 {
+  width: 58.33333%;
+}
+
+.col-mobile-8 {
+  width: 66.66667%;
+}
+
+.col-mobile-9 {
+  width: 75%;
+}
+
+.col-mobile-10 {
+  width: 83.33333%;
+}
+
+.col-mobile-11 {
+  width: 91.66667%;
+}
+
+.col-mobile-12 {
+  width: 100%;
+}
+
+.color1 .color-name:after {
+  content: "Salem";
+}
+
+.color2 .color-name:after {
+  content: "Cafe";
+}
+
+.color3 .color-name:after {
+  content: "Yuma";
+}
+
+.color4 .color-name:after {
+  content: "Gunsmoke";
+}
+
+.color1 .swatch {
+  background-color: #087047;
+}
+
+.color1 .color-RGB:after {
+  content: "8 / 112 / 71";
+}
+
+.color1 .color-HSL:after {
+  content: "156deg / 87% / 24%";
+}
+
+.color1-light .swatch {
+  background-color: #03c176;
+}
+
+.color1-base .swatch {
+  background-color: #087047;
+}
+
+.color1-dark .swatch {
+  background-color: #024329;
+}
+
+.mixed-with-color1 .color-name:after {
+  content: "Salem";
+}
+
+.mixed-with-color2 .color-name:after {
+  content: "Cafe";
+}
+
+.mixed-with-color3 .color-name:after {
+  content: "Yuma";
+}
+
+.mixed-with-color4 .color-name:after {
+  content: "Gunsmoke";
+}
+
+.color1 .mixed-with-color1 .sass-swatch {
+  background-color: #087047;
+}
+
+.color1 .mixed-with-color2 .sass-swatch {
+  background-color: #32441e;
+}
+
+.color1 .mixed-with-color3 .sass-swatch {
+  background-color: #85a277;
+}
+
+.color1 .mixed-with-color4 .sass-swatch {
+  background-color: #578575;
+}
+
+.color2 .swatch {
+  background-color: #492D08;
+}
+
+.color2 .color-RGB:after {
+  content: "73 / 45 / 8";
+}
+
+.color2 .color-HSL:after {
+  content: "34deg / 80% / 16%";
+}
+
+.color2-light .swatch {
+  background-color: #965908;
+}
+
+.color2-base .swatch {
+  background-color: #492D08;
+}
+
+.color2-dark .swatch {
+  background-color: #1c1102;
+}
+
+.mixed-with-color1 .color-name:after {
+  content: "Salem";
+}
+
+.mixed-with-color2 .color-name:after {
+  content: "Cafe";
+}
+
+.mixed-with-color3 .color-name:after {
+  content: "Yuma";
+}
+
+.mixed-with-color4 .color-name:after {
+  content: "Gunsmoke";
+}
+
+.color2 .mixed-with-color1 .sass-swatch {
+  background-color: #1f5931;
+}
+
+.color2 .mixed-with-color2 .sass-swatch {
+  background-color: #492d08;
+}
+
+.color2 .mixed-with-color3 .sass-swatch {
+  background-color: #9c8b61;
+}
+
+.color2 .mixed-with-color4 .sass-swatch {
+  background-color: #6d6d5f;
+}
+
+.color3 .swatch {
+  background-color: #C8BD91;
+}
+
+.color3 .color-RGB:after {
+  content: "200 / 189 / 145";
+}
+
+.color3 .color-HSL:after {
+  content: "48deg / 33% / 68%";
+}
+
+.color3-light .swatch {
+  background-color: #e6dec0;
+}
+
+.color3-base .swatch {
+  background-color: #C8BD91;
+}
+
+.color3-dark .swatch {
+  background-color: #bfad67;
+}
+
+.mixed-with-color1 .color-name:after {
+  content: "Salem";
+}
+
+.mixed-with-color2 .color-name:after {
+  content: "Cafe";
+}
+
+.mixed-with-color3 .color-name:after {
+  content: "Yuma";
+}
+
+.mixed-with-color4 .color-name:after {
+  content: "Gunsmoke";
+}
+
+.color3 .mixed-with-color1 .sass-swatch {
+  background-color: #4b8b61;
+}
+
+.color3 .mixed-with-color2 .sass-swatch {
+  background-color: #755f38;
+}
+
+.color3 .mixed-with-color3 .sass-swatch {
+  background-color: #c8bd91;
+}
+
+.color3 .mixed-with-color4 .sass-swatch {
+  background-color: #9aa08f;
+}
+
+.color4 .swatch {
+  background-color: #81908E;
+}
+
+.color4 .color-RGB:after {
+  content: "129 / 144 / 142";
+}
+
+.color4 .color-HSL:after {
+  content: "172deg / 6% / 54%";
+}
+
+.color4-light .swatch {
+  background-color: #a2bcb8;
+}
+
+.color4-base .swatch {
+  background-color: #81908E;
+}
+
+.color4-dark .swatch {
+  background-color: #607e7a;
+}
+
+.mixed-with-color1 .color-name:after {
+  content: "Salem";
+}
+
+.mixed-with-color2 .color-name:after {
+  content: "Cafe";
+}
+
+.mixed-with-color3 .color-name:after {
+  content: "Yuma";
+}
+
+.mixed-with-color4 .color-name:after {
+  content: "Gunsmoke";
+}
+
+.color4 .mixed-with-color1 .sass-swatch {
+  background-color: #327b60;
+}
+
+.color4 .mixed-with-color2 .sass-swatch {
+  background-color: #5d5037;
+}
+
+.color4 .mixed-with-color3 .sass-swatch {
+  background-color: #afad90;
+}
+
+.color4 .mixed-with-color4 .sass-swatch {
+  background-color: #81908e;
+}
+
+.swatch {
+  width: 100%;
+  height: 150px;
+}
+
+.label {
+  font-weight: bolder;
+}
+
+.value {
+  text-align: right;
+  width: 100%;
+}
+
+.sass-swatch {
+  width: 100%;
+  height: 50px;
+}
+
+.mixed-rate:after {
+  content: "65%";
+}
+
+@media screen and (min-width: 568px) {
+  .col-tablet-1 {
+    width: 8.33333%;
+  }
+
+  .col-tablet-2 {
+    width: 16.66667%;
+  }
+
+  .col-tablet-3 {
+    width: 25%;
+  }
+
+  .col-tablet-4 {
+    width: 33.33333%;
+  }
+
+  .col-tablet-5 {
+    width: 41.66667%;
+  }
+
+  .col-tablet-6 {
+    width: 50%;
+  }
+
+  .col-tablet-7 {
+    width: 58.33333%;
+  }
+
+  .col-tablet-8 {
+    width: 66.66667%;
+  }
+
+  .col-tablet-9 {
+    width: 75%;
+  }
+
+  .col-tablet-10 {
+    width: 83.33333%;
+  }
+
+  .col-tablet-11 {
+    width: 91.66667%;
+  }
+
+  .col-tablet-12 {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 850px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .col-desktop-1 {
+    width: 8.33333%;
+  }
+
+  .col-desktop-2 {
+    width: 16.66667%;
+  }
+
+  .col-desktop-3 {
+    width: 25%;
+  }
+
+  .col-desktop-4 {
+    width: 33.33333%;
+  }
+
+  .col-desktop-5 {
+    width: 41.66667%;
+  }
+
+  .col-desktop-6 {
+    width: 50%;
+  }
+
+  .col-desktop-7 {
+    width: 58.33333%;
+  }
+
+  .col-desktop-8 {
+    width: 66.66667%;
+  }
+
+  .col-desktop-9 {
+    width: 75%;
+  }
+
+  .col-desktop-10 {
+    width: 83.33333%;
+  }
+
+  .col-desktop-11 {
+    width: 91.66667%;
+  }
+
+  .col-desktop-12 {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/*# sourceMappingURL=input.css.map */

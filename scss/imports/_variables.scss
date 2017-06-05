@@ -1,0 +1,35 @@
+$grid-columns: 12;
+$grid-max-width: 65em;
+
+$color1: #087047;
+$color1-name: 'Salem';
+
+$color2: #492D08;
+$color2-name: 'Cafe';
+
+$color3: #C8BD91;
+$color3-name: 'Yuma';
+
+$color4: #81908E;
+$color4-name: 'Gunsmoke';
+
+$colors: (
+  color1: $color1,
+  color2: $color2,
+  color3: $color3,
+  color4: $color4
+);
+
+$color-names: (
+  color1: $color1-name,
+  color2: $color2-name,
+  color3: $color3-name,
+  color4: $color4-name
+);
+
+$light-saturate-amount: 10;
+$light-amount: 15;
+$dark-saturate-amount: 7;
+$dark-amount: 10;
+
+$mixed-rate: 65%;
