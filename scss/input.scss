@@ -10,6 +10,18 @@
   @include border-box;
 }
 
+h1 {
+  border-bottom: 1px solid gray;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.sectional {
+  margin: 10px 0;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -21,6 +33,12 @@
 .row {
   margin-left: -15px;
   margin-right: -15px;
+}
+
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 [class*='col-'] {
@@ -102,7 +120,6 @@
 .mixed-rate:after {
   content: "#{$mixed-rate}";
 }
-
 
 // MEDIA /////////////////////////////////////////////
 @media screen and (min-width: 568px) {
